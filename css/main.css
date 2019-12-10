@@ -1,0 +1,192 @@
+body { 
+    font-family: 'Muli', sans-serif;
+    color: #3C3EA1;
+}
+
+.container {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-auto-rows:minmax(100px, auto);
+}
+
+#logo { 
+        position: fixed;
+        top: 40px;
+        left: 40px;
+        width: 50px;
+}
+.title {
+    grid-column: 2 / 4 ;
+    grid-row:1;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.about {
+    background-color:#f6f7f1;
+    grid-column: 2 / 4 ; 
+    grid-row:2;
+    padding: 40px;
+}
+figure img {
+    box-shadow: 0px 3px 5px 0px #F2F2F2;
+}
+
+.project{
+    grid-column:2/4;
+    grid-row:3;
+    padding-top: 100px;
+}
+.myProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+}
+
+#project01 {
+    grid-column: 1/1;
+    grid-row:1;
+}
+
+
+#project02 {
+    grid-column: 2/2;
+    grid-row:1;
+}
+#project03 {
+    grid-column: 1/1;
+    grid-row:2; 
+}
+#project04 {
+    grid-column: 2/2;
+    grid-row:2;
+}
+
+.process {
+    grid-column:2/4;
+    grid-row:4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.myProcess {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 15px 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+}
+
+#Process {
+    grid-column: 1/1;
+    grid-row:1;
+}
+
+#first {
+    grid-column: 1/1;
+    grid-row:2;
+}
+#second {
+    grid-column: 2/2;
+    grid-row:2;
+}
+
+#third {
+    grid-column: 3/3;
+    grid-row:2;
+}
+
+.footer {
+    background-color: #3C3EA1;
+    color: white;
+    bottom: 0;
+    height: 300px;
+}
+
+.footer {
+display: grid;
+grid-template-columns: 1fr 2fr 2fr 1fr;
+grid-gap: 15px 10px;
+justify-items: stretch;
+}
+
+#contact{
+    grid-column: 2/2;
+    grid-row:1;
+    padding-top: 50px;
+}
+#email { 
+    grid-column:2/2;
+    grid-row:2;
+}
+
+#email span:hover {
+    background-color:#FEF58E;
+    color: #3C3EA1;
+}
+
+
+#icons {
+    grid-column: 2/2;
+    grid-row:3;
+}
+
+
+
+
+
+
+/* ---hover zoom-- */
+#project01 {
+    overflow: hidden; 
+}
+ 
+#project01 img {
+    transition: transform .5s ease;
+}
+  
+#project01:hover img {
+    transform: scale(1.5);
+}
+
+
+#project02 {
+    overflow: hidden; 
+}
+ 
+#project02 img {
+    transition: transform .5s ease;
+}
+  
+#project02:hover img {
+    transform: scale(1.5);
+}
+
+#project03 {
+    overflow: hidden; 
+}
+ 
+#project03 img {
+    transition: transform .5s ease;
+}
+  
+#project03:hover img {
+    transform: scale(1.5);
+}
+
+#project04 {
+    overflow: hidden; 
+}
+ 
+#project04 img {
+    transition: transform .5s ease;
+}
+  
+#project04:hover img {
+    transform: scale(1.5);
+}
